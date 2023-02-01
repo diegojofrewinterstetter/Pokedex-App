@@ -1,0 +1,202 @@
+:host {
+    font-family: "Poppins", sans-serif;
+    width: 250px;
+    display: block;
+
+}
+
+.card {
+
+    position: relative;
+    background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
+    width: 100%;
+    padding: 10px 5px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+}
+
+.Poison{
+
+    background: radial-gradient(circle at 50% 0%, #6c5ce7 36%, #ffffff 36%);    
+
+}
+
+.Fire{
+
+    background: radial-gradient(circle at 50% 0%, #FF675C 36%, #ffffff 36%)
+
+}
+
+.Electric{
+
+    background: radial-gradient(circle at 50% 0%, #FFEA70 36%, #ffffff 36%)
+
+}
+
+.Normal{
+
+    background: radial-gradient(circle at 50% 0%, #B09398 36%, #ffffff 36%)
+
+}
+
+.Water{
+
+    background: radial-gradient(circle at 50% 0%, #0190FF 36%, #ffffff 36%)
+
+}
+
+.Ice{
+
+    background: radial-gradient(circle at 50% 0%, #74b9ff 36%, #ffffff 36%)
+
+}
+
+.Rock{
+
+    background: radial-gradient(circle at 50% 0%, #2d3436 36%, #ffffff 36%)
+
+}
+
+.Flying{
+
+    background: radial-gradient(circle at 50% 0%, #81ecec 36%, #ffffff 36%)
+
+}
+
+.Grass{
+
+    background: radial-gradient(circle at 50% 0%, #4A9681 36%, #ffffff 36%)
+    
+}
+
+.Psychic{
+
+    background: radial-gradient(circle at 50% 0%, #a29bfe 36%, #ffffff 36%)
+
+}
+
+.Ghost{
+
+    background: radial-gradient(circle at 50% 0%, #a55eea 36%, #ffffff 36%)
+
+}
+
+.Bug{
+
+    background: radial-gradient(circle at 50% 0%, #26de81 36%, #ffffff 36%)
+
+}
+
+.Ground{
+
+    background: radial-gradient(circle at 50% 0%, #EFB549 36%, #ffffff 36%)
+
+}
+
+.Dragon{
+
+    background: radial-gradient(circle at 50% 0%, #ffeaa7 36%, #ffffff 36%)
+
+}
+
+.Steel{
+
+    background: radial-gradient(circle at 50% 0%, grey 36%, #ffffff 36%)
+
+}
+
+.Fighting{
+
+    background: radial-gradient(circle at 50% 0%, #30336b 36%, #ffffff 36%)
+
+}
+
+.Dark{
+
+    background: radial-gradient(circle at 50% 0%, black 36%, #ffffff 36%)
+
+}
+
+.container {
+    
+    padding: 50px;
+    width: 350px;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 100%;
+}
+
+p.desc {
+    min-height: 60px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+
+img.pokemon {
+    display: block;
+    width: 140px;
+    position: relative;
+    
+    height: 140px;
+    cursor: pointer;    
+    
+}
+
+.tx {
+    text-align: center;
+    font-weight: 600;
+    font-weight: bold;
+}
+
+.xd {
+
+    margin: 4px;
+
+}
+
+h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h3{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+.hp {
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0px;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+}
+
+.hp span {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.stats p{
+    color: #404060;
+}

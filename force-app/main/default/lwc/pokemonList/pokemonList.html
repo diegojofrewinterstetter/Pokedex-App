@@ -1,0 +1,61 @@
+<template>
+    <div class="slds-grid slds-p-around_small slds-align_absolute-center">
+        <div class="slds-size_1-of-3 slds-align_absolute-center">
+            <div class="slds-box slds-size_medium lp">
+
+                <div class="slds-text-heading_medium slds-p-around_x-small slds-align_absolute-center name" ><b>Nombre</b></div>
+
+                <lightning-input
+                class="lin"
+                placeholder="Nombre del Pokemon"
+                 type="text" 
+                 onchange={handleNameChange}>
+                </lightning-input>
+            </div>
+        </div>
+        <div class="slds-size_1-of-3 slds-align_absolute-center divCB">
+            <div class="slds-box slds-size_medium lp">
+                <div class="slds-text-heading_medium slds-p-around_x-small slds-align_absolute-center" ><b>Generacion</b></div>
+                <lightning-combobox
+                    options={optionsGeneration}
+                    onchange={handleGenChange}
+                    variant="label-hidden"
+                    class="slds-size_small slds-align_absolute-center cb">
+                </lightning-combobox>
+            </div>  
+        </div>
+        <div class="slds-size_1-of-3 slds-align_absolute-center">
+            <div class="slds-box slds-size_medium lp">
+                <div class="slds-text-heading_medium slds-p-around_x-small slds-align_absolute-center"><b>Tipo</b></div>
+                <lightning-combobox
+                    options={optionsType}
+                    onchange={handleTypeChange}
+                    variant="label-hidden"
+                    class="slds-size_small slds-align_absolute-center cb">
+                </lightning-combobox>
+            </div>
+        </div>
+    </div>
+
+        <template if:true={pokemon.data}>
+        <lightning-layout class="slds-align_absolute-center ">
+            <div class="slds-text-heading_medium slds-text-align_center slds-m-bottom_small rec">
+                <b class="bb">Registros recuperados: {pokemon.data.length}</b>
+            </div>
+        </lightning-layout>
+            <div class="slds-align_absolute-center cc">
+                <div class="slds-grid slds-wrap slds-grid_align-spread grid">
+                    <template if:true={pokemon.data}>
+                        <template for:each={pokemon.data} for:item="pokemon">
+                            <div data-pokemon-key key={pokemon.Tipos__c.Name} class="tarjeta">
+                                <c-pokemon-tile
+                                    pokemon={pokemon}
+                                    class="slds-col slds-var-m-around_small">
+                                </c-pokemon-tile>
+                            </div>
+                        </template>
+                    </template>
+                </div>
+            </div>
+        </template>
+</template>

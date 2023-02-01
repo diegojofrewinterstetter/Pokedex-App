@@ -1,0 +1,61 @@
+.grid{
+    width: 1100px;
+}
+
+.lgc-bg {
+    width: 500;
+   border-radius: 30px;
+    
+}
+
+.lp{
+    
+    background: #ffffff;
+}
+
+.cb{
+    margin-bottom: 8px;
+    margin-top: 12px;
+}
+
+.name{
+    padding-bottom: 0px;
+
+}
+
+.lin{
+    margin-bottom: 8px;
+}
+
+.bb{
+    font-family: "Poppins", sans-serif;
+}
+
+.cc{
+    margin-top: 110px;
+    margin-left: 230px;
+    padding: 100px;
+}
+
+.tarjeta{
+    padding: 10px;
+
+}
+
+.rec{
+    justify-content: center;
+    width: 220px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 0px;
+    border-radius: 30px;
+    font-weight: 400;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    font-size: 15px;
+    letter-spacing: 0.4px;
+  
+}
+
+.divCB{
+    border-radius: 300px;
+}
